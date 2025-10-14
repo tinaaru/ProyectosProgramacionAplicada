@@ -33,7 +33,7 @@ class OperacionesBasicas:
 
     def dividir(self, a, b):
         if b == 0:
-            print("⚠️ Advertencia: No se puede dividir entre 0, cambiando divisor a 1")
+            print("No se puede dividir entre 0")
             b = 1
         self.r = a / b
 
@@ -46,18 +46,14 @@ obj = ClaseOperaciones.OperacionesBasicas()
 obj.setVal(20)
 obj.setVal2(0)
 
-# Suma
 obj.sumar(obj.getVal(), obj.getVal2())
 print("Suma:", obj.getR())
 
-# Resta
 obj.restar(obj.getVal(), obj.getVal2())
 print("Resta:", obj.getR())
 
-# Multiplicación
 obj.multiplicar(obj.getVal(), obj.getVal2())
 print("Multiplicación:", obj.getR())
 
-# División
 obj.dividir(obj.getVal(), obj.getVal2())
 print("División:", obj.getR())
